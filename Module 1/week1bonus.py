@@ -10,7 +10,7 @@ def getQualityScore(asciiQualities):
     """
     qualities = []
     for character in asciiQualities:
-        qualities.append(10**(-(ord(character)-33/10)))
+        qualities.append(10**(-((ord(character)-33)/10)))
     return qualities
 
 def getProbabilities(fileName):
