@@ -46,15 +46,15 @@ def reverseCompliment(sequence):
     rcs['N'] = 'N'
     for character in sequence:
         if character in rcs.keys():
-            revCompliment = rcs.get(character) + revCompliment
+            revCompliment += rcs.get(character) 
         else:
             revCompliment += character
-    return revCompliment
+    return revCompliment[::-1]
 
 def rcCount(sequence, fileName):
     attributes = checkFileType(fileName)
-    seqList = [] #list to hold all of the sequences
-    test = ''
+    choppedSeqList = [[]] #list to hold all of the sequences
+    seqList = []
     rcList = [] #list to hold all of the reverse compliments
     counts = [0, 0]
     regex = re.compile(sequence.upper())
@@ -69,11 +69,10 @@ def rcCount(sequence, fileName):
                 line = line.decode() #decode
             if line[0] == '>':
                 count+=1
-                seqList.append('')
             else:
-                #seqList[count] += line.strip('\n')
-                test += line.strip('\n').upper()
-        seqList.append(test)
+                choppedSeqList[count].append(line.strip('\n').upper())
+        for seq in choppedSeqList:
+            seqList.append(''.join(seq))
     else: #It is a fastq file
         iterator = 0
         count = 0
@@ -92,8 +91,6 @@ def rcCount(sequence, fileName):
         iterator+=1
     print(seqList, rcList, counts)
         
-            
-
 #parse arguments
 parser = argparse.ArgumentParser(description="Generates reverse compliment of a fasta/fastq file and counts for a sequence in each")
 parser.add_argument('-s', '--sequence', type=str, help='the sequence that is searched for', default="ATGTTG")
