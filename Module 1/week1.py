@@ -27,6 +27,7 @@ def checkFileType(fileName):
 def reverseCompliment(sequence): 
     sequence = sequence.upper()
     revCompliment = ''
+    temporary = []
     rcs = {}
     rcs['A'] = 'T'
     rcs['T'] = 'A'
@@ -46,9 +47,10 @@ def reverseCompliment(sequence):
     rcs['N'] = 'N'
     for character in sequence:
         if character in rcs.keys():
-            revCompliment += rcs.get(character) 
+            temporary.append(rcs.get(character)) 
         else:
-            revCompliment += character
+            temporary.append(character)
+    revCompliment = ''.join(temporary)
     return revCompliment[::-1]
 
 def rcCount(sequence, fileName):
@@ -112,4 +114,4 @@ testingq = 'testing.fastq'
 
 #test print statement
 #print(reverseComplimentAndCount("", fastagz))
-rcCount("ATGTTG", fastq)
+rcCount("ATGTTG", fasta)
