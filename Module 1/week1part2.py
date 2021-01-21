@@ -1,6 +1,9 @@
-#Assignment 1, part 2 
+"""
+Assignment 1, part 2 
 
-import argparse, gzip, re, tqdm #imports
+Works with argument parsing. Use ... py week1part2.py -h ... for help.
+"""
+import argparse, gzip, re
 
 def checkFileType(fileName):
     """
@@ -109,7 +112,7 @@ seq = args.sequence.upper()
 name = args.file
 
 
-#oppening file variable
+#opening file variable
 fileThing = open("output.txt", 'w')
 
 print("Checking", name, "and it's reverse compliment for", seq, "...")
