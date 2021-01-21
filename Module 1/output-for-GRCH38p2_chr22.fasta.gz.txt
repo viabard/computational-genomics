@@ -1,0 +1,3 @@
+Checking GRCH38p2_chr22.fasta.gz and it's reverse compliment for ATGTTG...
+GRCH38p2_chr22.fasta.gz counts: 14422
+GRCH38p2_chr22.fasta.gz reverse compliment counts: 14524
