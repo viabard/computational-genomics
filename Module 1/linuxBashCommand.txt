@@ -1,0 +1,2 @@
+Uses printf to print, awk for the modulus, grep to find all the nucleotides, and wc to count them.
+printf "A: "; awk 'NR%4==2' brca.example.illumina.0.1.fastq | grep A -o | wc -l ;printf "C: "; awk 'NR%4==2' brca.example.illumina.0.1.fastq | grep C -o | wc -l ; printf "G: "; awk 'NR%4==2' brca.example.illumina.0.1.fastq | grep G -o | wc -l; printf "T: "; awk 'NR%4==2' brca.example.illumina.0.1.fastq | grep T -o | wc -l
