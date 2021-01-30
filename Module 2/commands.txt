@@ -1,0 +1,9 @@
+Get regions:
+samtools faidx chr21_CM000482.1.fasta CM000482.1:16741801-16841800 -o chr21_CM000482.1.16741801.fasta
+samtools faidx chr21_CM000511.1.fasta CM000511.1:16741801-16841800 -o chr21_CM000511.1.16741801.fasta
+Check number bp:
+grep ['>'] -v chr21_CM000482.1.16741801.fasta | grep [ATCGN] -o | wc -l
+grep ['>'] -v chr21_CM000511.1.16741801.fasta | grep [ATCGN] -o | wc -l
+ART:
+art_illumina -ss HS20 -i chr21_CM000511.1.16741801.fasta -o chr21_CM000511.1.16741801.art -l 100 -f 10
+art_illumina -ss HS20 -i chr21_CM000511.1.16741801.fasta -o chr21_CM000511.1.16741801.art -l 100 -f 10

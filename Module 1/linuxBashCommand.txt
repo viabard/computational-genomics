@@ -1,5 +1,18 @@
 Uses printf to print, awk for the modulus, grep to find all the nucleotides, and wc to count them.
 printf "fastq A: "; awk 'NR%4==2' brca.example.illumina.0.1.fastq | grep A -o | wc -l ;printf "fastq C: "; awk 'NR%4==2' brca.example.illumina.0.1.fastq | grep C -o | wc -l ; printf "fastq G: "; awk 'NR%4==2' brca.example.illumina.0.1.fastq | grep G -o | wc -l; printf "fastq T: "; awk 'NR%4==2' brca.example.illumina.0.1.fastq | grep T -o | wc -l
 
+Output -
+fastq A: 894660
+fastq C: 706586
+fastq G: 705697
+fastq T: 895969
+
+
 Uses printf to print, grep to find only lines without greater than (>), grep to find the nucleotides and print them onto new lines, and wc to count the printed lines (therefore counting the nucleotides)
 printf "fasta A: "; grep ['>'] -v GRCH38p2_chr22.fasta | grep A -o | wc -l; printf "fasta C: "; grep ['>'] -v GRCH38p2_chr22.fasta | grep C -o | wc -l; printf "fasta G: "; grep ['>'] -v GRCH38p2_chr22.fasta | grep G -o | wc -l; printf "fasta T: "; grep ['>'] -v GRCH38p2_chr22.fasta | grep T -o | wc -l 
+
+Output -
+fasta A: 10382214
+fasta C: 9160652
+fasta G: 9246186
+fasta T: 10370725
