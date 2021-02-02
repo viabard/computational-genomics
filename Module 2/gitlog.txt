@@ -1,0 +1,47 @@
+commit ea2711d6e3d70650bc56a39161a581203c24029b
+Author: Joshua P Schaaf <tug90412@cstbioinform.tu.temple.edu>
+Date:   Sun Jan 31 21:00:28 2021 -0500
+
+    final commit
+
+commit daf0489617ce02d0483aafeb7e44c5053e82b03b
+Author: Joshua P Schaaf <tug90412@cstbioinform.tu.temple.edu>
+Date:   Sun Jan 31 19:36:50 2021 -0500
+
+    Finishing touches, making sure everything is right
+
+commit 61150dbb1a19e2ef5c2b26525a57df2b57477115
+Author: Joshua P Schaaf <tug90412@cstbioinform.tu.temple.edu>
+Date:   Sun Jan 31 19:25:06 2021 -0500
+
+    Fixed week2bonus to have message before looking at stdin
+
+commit dbfd81c44ae5983be25365304586d28531e27f68
+Author: Joshua P Schaaf <tug90412@cstbioinform.tu.temple.edu>
+Date:   Sun Jan 31 19:06:58 2021 -0500
+
+    Added week2bonus and used art for fastq simulation
+
+commit 8616ff255654029e9aa44460ae9469e3f1338b25
+Author: Joshua P Schaaf <tug90412@cstbioinform.tu.temple.edu>
+Date:   Fri Jan 29 15:02:41 2021 -0500
+
+    Generated fastq files from python script
+
+commit 05ecc60b41485c5c500c461626347e31500e131f
+Author: Joshua P Schaaf <tug90412@cstbioinform.tu.temple.edu>
+Date:   Thu Jan 28 02:42:03 2021 -0500
+
+    Added created files from samtools faidx
+
+commit b35b9e5ad4787c095882452805b7ccb0b0f326c1
+Author: Joshua P Schaaf <tug90412@cstbioinform.tu.temple.edu>
+Date:   Thu Jan 28 02:37:36 2021 -0500
+
+    Created module2.py to start python script portion of assignment
+
+commit 31dca930aa1b0b53f5bd0da5794600349f94e88b
+Author: Joshua P Schaaf <tug90412@cstbioinform.tu.temple.edu>
+Date:   Tue Jan 26 20:42:16 2021 -0500
+
+    Added copies of Craig Venter's 21st chromosomes.

@@ -5,7 +5,7 @@ Works with argument parsing
 """
 import argparse, random, subprocess
 
-def reverseCompliment(sequence): 
+def reverseCompliment(sequence):
     """
     Creating the reverse compliment of a sequence(string)...
     Returns the reverse compliment. If there are any dashes or non-nucleotide (non IUPAC), it is just re-added.
@@ -32,10 +32,10 @@ def reverseCompliment(sequence):
     rcs['N'] = 'N'
     for character in sequence:
         if character in rcs.keys():
-            temporary.append(rcs.get(character)) 
+            temporary.append(rcs.get(character))
         else:
             temporary.append(character)
-    revCompliment = ''.join(temporary) #join is faster than adding/math00    
+    revCompliment = ''.join(temporary) #join is faster than adding/math00
     return revCompliment[::-1]
 
 def getReads(inFile, readLength, depth):
@@ -43,7 +43,7 @@ def getReads(inFile, readLength, depth):
     fileThing = open(inFile, 'r')
     fastaRegion = fileThing.readlines()
     nucleotides = ''
-    fileThing.close() 
+    fileThing.close()
     sp = subprocess.Popen("grep ['>'] -v " + inFile + " | grep [ATCGN] -o | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
     numberOfBases = int(sp.stdout.read())
 
@@ -52,7 +52,7 @@ def getReads(inFile, readLength, depth):
         if i != 0:
             nucleotides += fastaRegion[i].strip('\n')
     rcNucleotides = reverseCompliment(nucleotides)
-    
+
     print("Making " + str(numberOfReads) + " reads...")
     for i in range(numberOfReads):
         rand = random.randrange(0, numberOfBases-readLength)
@@ -86,12 +86,12 @@ try:
     parser.add_argument('-d', '--depth', type = int, help = "depth of coverage of regions")
     args = parser.parse_args()
 
-    #making 
-    inFile = args.file 
+    #making
+    inFile = args.file
     outFile = args.output
     readLength = args.readlengths
     depth = args.depth
-        
+
     reads = getReads(inFile, readLength, depth)
     makeFastq(reads, outFile, inFile, readLength)
 except:
