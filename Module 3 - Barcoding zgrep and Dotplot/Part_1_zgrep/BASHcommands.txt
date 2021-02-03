@@ -1,0 +1,15 @@
+Uses zgrep and wc to find instances of a sequence:
+Command: printf "chr21_CM000511: \n";zgrep -E '^[ATCGN]+$' chr21_CM000511.1.16741801.fasta.gz | grep "AGCTGGGA\|CGGC\|TAGGTAT" -o |sort|uniq -c;printf "chr21_CM000482: \n";zgrep -E '^[ATCGN]+$' chr21_CM000482.1.16741801.fasta.gz | grep "AGCTGGGA\|CGGC\|TAGGTAT" -o |sort|uniq -c
+Output:
+chr21_CM000511:
+      4 AGCTGGGA
+     26 CGGC
+     10 TAGGTAT
+chr21_CM000482:
+      4 AGCTGGGA
+     24 CGGC
+     10 TAGGTAT
+
+**This will not count all occurences correctly, as it will not count overlapping sequences...
+  for instance, CGGCGGC has two 'CGGC' instances, but the commands above will only count 1
+  occurence. It also avoids counting any lines that don't start and end with A, T, C, G, or N.**
