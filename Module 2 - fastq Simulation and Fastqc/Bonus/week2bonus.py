@@ -6,10 +6,9 @@ import argparse, random, sys
 def getReads(error):
     nucleotides = {'A', 'T', 'C', 'G', 'N'}
     f = sys.stdin.read()
-    print("Reading stdin, if no input, cancel program and pipe stdin (like cat file.fasta | python3 week2bonus.py -e 0.0001)")
     reads = f.splitlines(keepends=True)
     newReads = []
-    sys.stdout.write(reads[0] + "w/ error rate: " + str(error))
+    sys.stdout.write(reads[0].strip('\n') + "w/ error rate: " + str(error) + '\n')
     for i in range(len(reads)-1):
         newReads.append('')
         for nucleotide in reads[i+1]:
