@@ -1,0 +1,27 @@
+samtools faidx chr21_CM000511.1.fasta CM000511.1:16741801-16841800 -o chr21_CM000511.1.16741801.fasta 
+samtools faidx chr21_CM000482.1.fasta CM000482.1:16741801-16841800 -o chr21_CM000482.1.16741801.fasta 
+grep -v ['>'] chr21_CM000511.1.16741801.fasta | grep N -o | wc -l
+grep -v ['>'] chr21_CM000482.1.16741801.fasta | grep N -o | wc -l
+art_illumina -ss HS20 -l 100 -f 10 -i chr21_CM000511.1.16741801.fasta -o chr21_511_sra
+art_illumina -ss HS20 -l 100 -f 10 -i chr21_CM000482.1.16741801.fasta -o chr21_482_sra
+cat chr21_482_sra.fq chr21_511_sra.fq > chr21_concat.fq
+velveth ./singlek51 51 -fastq -short chr21_concat.fq
+velvetg ./singlek51
+velveth ./singlek21 21 -fastq -short chr21_concat.fq
+velvetg ./singlek21
+art_illumina -ss HS20 -l 100 -f 10 -i chr21_CM000511.1.16741801.fasta -o chr21_511_sra -m 1000 -s 10
+art_illumina -ss HS20 -l 100 -f 10 -i chr21_CM000482.1.16741801.fasta -o chr21_482_sra -m 1000 -s 10
+cat chr21_511_sra1.fq chr21_482_sra1.fq > chr21_sra1.fq
+cat chr21_511_sra2.fq chr21_482_sra2.fq > chr21_sra2.fq
+velveth ./paired21 21 -shortPaired -fastq -separate chr21_sra1.fq chr21_sra2.fq
+velvetg ./paired21 -ins_length 1000 -exp_cov auto
+velveth ./paired51 51 -shortPaired -fastq -separate chr21_sra1.fq chr21_sra2.fq
+velvetg ./paired51 -ins_length 1000 -exp_cov auto
+art_illumina -ss HS20 -l 100 -f 10 -i chr21_CM000482.1.16741801.fasta -o chr21_482_2_sra -m 5000 -s 50
+art_illumina -ss HS20 -l 100 -f 10 -i chr21_CM000511.1.16741801.fasta -o chr21_511_2_sra -m 5000 -s 50
+cat chr21_511_2_sra1.fq chr21_482_2_sra1.fq > chr21_2_sra1.fq
+cat chr21_511_2_sra2.fq chr21_482_2_sra2.fq > chr21_2_sra2.fq
+velveth ./dpaired21 21 -shortPaired -separate -fastq chr21_sra1.fq chr21_sra2.fq -shortPaired2 -separate -fastq chr21_2_sra1.fq chr21_2_sra2.fq
+velvetg ./dpaired21 -cov_cutoff auto -exp_cov auto
+velveth ./dpaired51 51 -shortPaired -separate -fastq chr21_sra1.fq chr21_sra2.fq -shortPaired2 -separate -fastq chr21_2_sra1.fq chr21_2_sra2.fq
+velvetg ./dpaired51 -cov_cutoff auto -exp_cov auto
