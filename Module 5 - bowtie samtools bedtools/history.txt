@@ -1,0 +1,30 @@
+samtools faidx Homo_sapiens.GRCh38.dna.chromosome.17.fa 17:41628720-42628719 -o Hs17_1000000.fa
+grep ['>'] -v Hs17_1000000.fa | grep N -o | wc -l
+python addsnps.py Hs17_1000000.fa Hs17_1000000_1.fa 0.01 42
+python addsnps.py Hs17_1000000.fa Hs17_1000000_2.fa 0.02 42
+python addsnps.py Hs17_1000000.fa Hs17_1000000_5.fa 0.05 42
+art_illumina -ss HS25 -l 100 -f 5 -i Hs17_1000000.fa -o Hs17_1000000
+art_illumina -ss HS25 -l 100 -f 5 -i Hs17_1000000_1.fa -o Hs17_1000000_1
+art_illumina -ss HS25 -l 100 -f 5 -i Hs17_1000000_2.fa -o Hs17_1000000_2
+art_illumina -ss HS25 -l 100 -f 5 -i Hs17_1000000_5.fa -o Hs17_1000000_5
+bowtie -S Hs17_1000000_index Hs17_1000000.fq Hs17_1000000.sam
+samtools view -b -S Hs17_1000000.sam > Hs17_1000000.bam
+samtools sort Hs17_1000000.bam > Hs17_1000000_sorted.bam
+samtools index Hs17_1000000_sorted.bam
+bowtie -S Hs17_1000000_index Hs17_1000000_1.fq Hs17_1000000_1.sam
+samtools view -b -S Hs17_1000000_1.sam > Hs17_1000000_1.bam
+samtools sort Hs17_1000000_1.bam > Hs17_1000000_1_sorted.bam
+samtools index Hs17_1000000_1_sorted.bam
+bowtie -S Hs17_1000000_index Hs17_1000000_2.fq Hs17_1000000_2.sam
+samtools view -b -S Hs17_1000000_2.sam > Hs17_1000000_2.bam
+samtools sort Hs17_1000000_2.bam > Hs17_1000000_2_sorted.bam
+samtools index Hs17_1000000_2_sorted.bam
+bowtie -S Hs17_1000000_index Hs17_1000000_5.fq Hs17_1000000_5.sam
+samtools view -b -S Hs17_1000000_5.sam > Hs17_1000000_5.bam
+samtools sort Hs17_1000000_5.bam > Hs17_1000000_5_sorted.bam
+samtools index Hs17_1000000_5_sorted.bam
+bedtools genomecov -ibam Hs17_1000000_sorted.bam > 0_bedtools.bt
+bedtools genomecov -ibam Hs17_1000000_1_sorted.bam > 1_bedtools.bt
+bedtools genomecov -ibam Hs17_1000000_2_sorted.bam > 2_bedtools.bt
+bedtools genomecov -ibam Hs17_1000000_5_sorted.bam > 5_bedtools.bt
+python3 hist.py
