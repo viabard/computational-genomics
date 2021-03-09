@@ -1,0 +1,25 @@
+ 1136  wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/phase3/data/HG00277/exome_alignment/HG00277.mapped.ILLUMINA.bwa.FIN.exome.20120522.bam
+ 1137  wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/phase3/data/HG00277/alignment/HG00277.mapped.ILLUMINA.bwa.FIN.low_coverage.20120522.bam.bai
+ 1155  samtools view -b HG00277.mapped.ILLUMINA.bwa.FIN.exome.20120522.bam 22 > HG00277.mapped.exome.22.bam
+ 1156  samtools sort HG00277.mapped.exome.22.bam > HG00277.mapped.exome.22.sorted.bam
+ 1157  samtools index HG00277.mapped.exome.22.sorted.bam
+ 1160  cp /usr/local/hs37d5/ -r .
+ 1162  samtools faidx hs37d5.fa 22 > hs37d5_22.fa
+ 
+ 1166  samtools mpileup -u -f hs37d5_22.fa HG00277.mapped.exome.22.sorted.bam > HG00277.exome.22.bcf
+ 1167  bcftools call -v -m HG00277.exome.22.bcf > HG00277.exome.22.variants.vcf
+ 1169  head -n 10000 HG00277.exome.22.variants.vcf > HG00277.exome.22.variants.10000.vcf
+
+ 1176  grep ['>'] -v chr13_CM000474.1.fasta | grep [ATCGN] -o | wc -l
+ 1234  samtools faidx chr13_CM000474.1.fasta CM000474.1:47690399-48690398 -o chr13_CM000474.1000000.fasta
+ 1235  samtools faidx chr13_CM000503.1.fasta CM000503.1:47690399-48690398 -o chr13_CM000503.1000000.fasta
+ 1236  art_illumina -ss HS20 -l 100 -f 10 -i chr13_CM000474.1000000.fasta -o chr13_CM000474.1000000.sra
+ 1237  art_illumina -ss HS20 -l 100 -f 10 -i chr13_CM000503.1000000.fasta -o chr13_CM000503.1000000.sra
+ 1238  cat chr13_CM000503.1000000.sra.fq chr13_CM000474.1000000.sra.fq > chr13_1000000.fq
+ 1240  bowtie-build -f chr13_CM000474.1000000.fasta chr13_1000000_index
+ 1242  bowtie -S chr13_1000000_index chr13_1000000.fq chr13_1000000.sam
+ 1243  samtools view -b -S chr13_1000000.sam > chr13_1000000.bam
+ 1244  samtools sort chr13_1000000.bam > chr13_1000000_sorted.bam
+ 1247  samtools mpileup -u -f chr13_CM000474.1000000.fasta chr13_1000000_sorted.bam > chr13_1000000_sorted.bcf
+ 1248  bcftools call -v -m chr13_1000000_sorted.bcf > chr13_1000000_sorted.vcf
+ 1249  wc -l chr13_1000000_sorted.vcf 
