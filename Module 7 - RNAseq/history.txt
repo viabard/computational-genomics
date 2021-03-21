@@ -1,0 +1,4 @@
+wget https://www.encodeproject.org/files/ENCFF978EVS/@@download/ENCFF978EVS.bam
+samtools index ENCFF978EVS.bam
+samtools view -b ENCFF978EVS.bam chr22 > ENCFF978EVS_chr22.bam
+cufflinks -G chr22GENCODE_V24.gtf ENCFF978EVS_chr22.bam
