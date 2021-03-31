@@ -1,0 +1,6 @@
+head -n 400 transcripts.gtf > 400_transcripts.gtf
+perl /usr/lib/transdecoder/util/cufflinks_gtf_genome_to_cdna_fasta.pl 400_transcripts.gtf /usr/local/chr22ref.fa >cDNA_400.fasta
+/usr/bin/TransDecoder.LongOrfs -t cDNA_400.fasta
+cp /usr/local/Pfam-A.hmm .
+hmmpress Pfam-A.hmm
+hmmscan --cpu 8 --domtblout pfam.domtblout Pfam-A.hmm cDNA_400.fasta.transdecoder_dir/longest_orfs.pep

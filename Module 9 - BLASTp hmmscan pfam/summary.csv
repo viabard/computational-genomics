@@ -1,0 +1,181 @@
+,longest_orfs.pep Transcript Name,Peptide Length,blastP Best Hit Name,blastP Sequence ID,hmmscan First pfam Domain Name
+0,Gene.1::ENST00000609641.1::g.1::m.1,157,,,
+1,Gene.2::ENST00000423580.2::g.2::m.2,191,"hCG2042833, partial [Homo sapiens]",EAW57721.1,VWA
+2,Gene.3::ENST00000437781.5::g.3::m.3,101,,,
+3,Gene.4::ENST00000441544.2::g.4::m.4,107,hCG1817588 [Homo sapiens],EAW57745.1,
+4,Gene.5::ENST00000610390.4::g.5::m.5,392,adenosine deaminase 2 isoform a precursor [Homo sapiens],NP_001269154.1,A_deaminase
+5,Gene.6::ENST00000610390.4::g.6::m.6,275,,,
+6,Gene.7::ENST00000610390.4::g.7::m.7,160,unnamed protein product [Homo sapiens],BAH12795.1,
+7,Gene.8::ENST00000610390.4::g.8::m.8,123,"hCG2038249, partial [Homo sapiens]",EAW99473.1,
+8,Gene.9::ENST00000610390.4::g.9::m.9,105,,,
+9,Gene.10::ENST00000612619.1::g.10::m.10,877,interleukin-17 receptor A isoform 2 precursor [Homo sapiens],NP_001276834.1,IL17R_fnIII_D1
+10,Gene.11::ENST00000612619.1::g.11::m.11,150,,,
+11,Gene.12::ENST00000612619.1::g.12::m.12,130,hCG1820681 [Homo sapiens],EAW57743.1,
+12,Gene.13::ENST00000612619.1::g.13::m.13,126,hCG2033532 [Homo sapiens],EAW68204.1,
+13,Gene.14::ENST00000612619.1::g.14::m.14,120,,,
+14,Gene.15::ENST00000612619.1::g.15::m.15,115,,,
+15,Gene.16::ENST00000612619.1::g.16::m.16,101,,,
+16,Gene.17::ENST00000444162.1::g.17::m.17,101,,,
+17,Gene.18::ENST00000426585.5::g.18::m.18,134,unnamed protein product [Homo sapiens],BAC04480.1,
+18,Gene.19::ENST00000426585.5::g.19::m.19,124,phosphatase TPTE gamma isoform [Homo sapiens],AAP45144.1,TMEM_230_134
+19,Gene.20::ENST00000426585.5::g.20::m.20,122,,,
+20,Gene.21::ENST00000426585.5::g.21::m.21,112,"hCG2038825, isoform CRA_a [Homo sapiens]",EAW57715.1,AT_hook
+21,Gene.22::ENST00000621704.4::g.22::m.22,509,putative POTE ankyrin domain family member M [Homo sapiens],NP_001138914.1,Ank_2
+22,Gene.23::ENST00000621704.4::g.23::m.23,120,alternative protein POTEM [Homo sapiens],CCO13794.1,CCDC144C
+23,Gene.24::ENST00000330232.8::g.24::m.24,275,,,
+24,Gene.25::ENST00000330232.8::g.25::m.25,271,adenosine deaminase 2 isoform b [Homo sapiens],NP_803124.1,A_deaminase
+25,Gene.26::ENST00000330232.8::g.26::m.26,160,unnamed protein product [Homo sapiens],BAH12795.1,
+26,Gene.27::ENST00000330232.8::g.27::m.27,123,"hCG2038249, partial [Homo sapiens]",EAW99473.1,
+27,Gene.28::ENST00000359963.4::g.28::m.28,558,T-complex protein 1 subunit theta-like 2 [Homo sapiens],NP_055221.1,Cpn60_TCP1
+28,Gene.29::ENST00000359963.4::g.29::m.29,160,,,
+29,Gene.30::ENST00000588548.1::g.30::m.30,251,unnamed protein product [Homo sapiens],BAC87158.1,Gag_p30
+30,Gene.31::ENST00000588548.1::g.31::m.31,123,unnamed protein product [Homo sapiens],BAC87158.1,Gag_p30
+31,Gene.32::ENST00000331437.3::g.32::m.32,621,transmembrane protein 121B isoform a [Homo sapiens],NP_114096.1,CECR6_TMEM121
+32,Gene.33::ENST00000331437.3::g.33::m.33,275,,,
+33,Gene.34::ENST00000331437.3::g.34::m.34,224,,,
+34,Gene.35::ENST00000331437.3::g.35::m.35,210,,,
+35,Gene.36::ENST00000331437.3::g.36::m.36,160,,,
+36,Gene.37::ENST00000331437.3::g.37::m.37,125,,,
+37,Gene.38::ENST00000400593.6::g.38::m.38,134,"hCG2038825, isoform CRA_a [Homo sapiens]",EAW57715.1,
+38,Gene.39::ENST00000400593.6::g.39::m.39,127,putative tyrosine-protein phosphatase TPTE isoform beta [Homo sapiens],NP_954868.2,
+39,Gene.40::ENST00000400593.6::g.40::m.40,107,"transmembrane phosphoinositide 3-phosphatase and tensin homolog 2, isoform CRA_f [Homo sapiens]",EAX08224.1,
+40,Gene.41::ENST00000623391.1::g.41::m.41,220,"unknown protein, partial [Homo sapiens]",AAA88038.1,DUF1725
+41,Gene.42::ENST00000623391.1::g.42::m.42,174,"ORF2-like protein, partial [Homo sapiens]",AAD04635.1,RVT_1
+42,Gene.43::ENST00000623391.1::g.43::m.43,128,unnamed protein product [Homo sapiens],BAB13849.1,DUF4658
+43,Gene.44::ENST00000331428.5::g.44::m.44,460,XK-related protein 3 [Homo sapiens],NP_001305180.1,XK-related
+44,Gene.45::ENST00000585784.1::g.45::m.45,109,"putative uncharacterized protein encoded by LINC00596, partial [Homo sapiens]",XP_011521083.1,
+45,Gene.46::ENST00000623130.1::g.46::m.46,431,putative p150 [Homo sapiens],AAC51276.1,RVT_1
+46,Gene.47::ENST00000623130.1::g.47::m.47,323,putative p150 [Homo sapiens],AAC51261.1,DUF4417
+47,Gene.48::ENST00000623130.1::g.48::m.48,269,,,
+48,Gene.49::ENST00000623130.1::g.49::m.49,237,"unknown protein, partial [Homo sapiens]",AAA88037.1,Dor1
+49,Gene.50::ENST00000623130.1::g.50::m.50,231,"hCG21039, isoform CRA_a, partial [Homo sapiens]",EAW57733.1,
+50,Gene.51::ENST00000623130.1::g.51::m.51,224,,,
+51,Gene.52::ENST00000623130.1::g.52::m.52,222,GRB2-associated-binding protein 4 isoform X5 [Homo sapiens],XP_011544418.1,
+52,Gene.53::ENST00000623130.1::g.53::m.53,220,"unknown protein, partial [Homo sapiens]",AAA88038.1,RVT_1
+53,Gene.54::ENST00000623130.1::g.54::m.54,208,,,
+54,Gene.55::ENST00000623130.1::g.55::m.55,206,,,
+55,Gene.56::ENST00000623130.1::g.56::m.56,203,Endonuclease domain of human LINE1 ORF2p [Homo sapiens],1VYB_A,Exo_endo_phos
+56,Gene.57::ENST00000623130.1::g.57::m.57,198,"hCG1740870, isoform CRA_b, partial [Homo sapiens]",EAX10075.1,V1R
+57,Gene.58::ENST00000623130.1::g.58::m.58,195,"unknown protein, partial [Homo sapiens]",AAA88038.1,DUF1725
+58,Gene.59::ENST00000623130.1::g.59::m.59,186,alternative protein LOC100128009 [Homo sapiens],CCQ43967.1,
+59,Gene.60::ENST00000623130.1::g.60::m.60,185,"unknown protein, partial [Homo sapiens]",AAA88036.1,DUF1725
+60,Gene.61::ENST00000623130.1::g.61::m.61,171,,,
+61,Gene.62::ENST00000623130.1::g.62::m.62,167,,,
+62,Gene.63::ENST00000623130.1::g.63::m.63,167,NAG13 [Homo sapiens],AAG27485.1,RVT_1
+63,Gene.64::ENST00000623130.1::g.64::m.64,158,,,
+64,Gene.65::ENST00000623130.1::g.65::m.65,156,"hCG1817096, isoform CRA_a [Homo sapiens]",EAW54761.1,V1R
+65,Gene.66::ENST00000623130.1::g.66::m.66,155,"Unknown (protein for IMAGE:4480714), partial [Homo sapiens]",AAH32807.1,DUF4417
+66,Gene.67::ENST00000623130.1::g.67::m.67,151,NAG13 [Homo sapiens],AAG27485.1,RVT_1
+67,Gene.68::ENST00000623130.1::g.68::m.68,150,"hypothetical protein FLJ11292, isoform CRA_a [Homo sapiens]",EAW95928.1,
+68,Gene.69::ENST00000623130.1::g.69::m.69,149,,,
+69,Gene.70::ENST00000623130.1::g.70::m.70,149,,,Seadorna_VP6
+70,Gene.71::ENST00000623130.1::g.71::m.71,144,"hCG21039, isoform CRA_b [Homo sapiens]",EAW57734.1,
+71,Gene.72::ENST00000623130.1::g.72::m.72,142,hCG2039160 [Homo sapiens],EAW50846.1,
+72,Gene.73::ENST00000623130.1::g.73::m.73,140,"hCG1777785, partial [Homo sapiens]",EAX06041.1,DUF4391
+73,Gene.74::ENST00000623130.1::g.74::m.74,138,,,
+74,Gene.75::ENST00000623130.1::g.75::m.75,136,PRO2221 [Homo sapiens],AAF71115.1,Tnp_22_trimer
+75,Gene.76::ENST00000623130.1::g.76::m.76,136,Solution structure of the RMM-CTD domains of human LINE-1 ORF1p [Homo sapiens],2LDY_A,Tnp_22_dsRBD
+76,Gene.77::ENST00000623130.1::g.77::m.77,133,unnamed protein product [Homo sapiens],BAC85466.1,Tnp_22_dsRBD
+77,Gene.78::ENST00000623130.1::g.78::m.78,133,hCG1820778 [Homo sapiens],EAX05005.1,RVT_1
+78,Gene.79::ENST00000623130.1::g.79::m.79,132,,,
+79,Gene.80::ENST00000623130.1::g.80::m.80,132,,,
+80,Gene.81::ENST00000623130.1::g.81::m.81,131,"Unknown (protein for IMAGE:4480714), partial [Homo sapiens]",AAH32807.1,
+81,Gene.82::ENST00000623130.1::g.82::m.82,126,"hCG2038982, partial [Homo sapiens]",EAW54971.1,Adhesin_P1_N
+82,Gene.83::ENST00000623130.1::g.83::m.83,117,"Unknown (protein for IMAGE:4480714), partial [Homo sapiens]",AAH32807.1,
+83,Gene.84::ENST00000623130.1::g.84::m.84,116,,,
+84,Gene.85::ENST00000623130.1::g.85::m.85,116,hCG1787560 [Homo sapiens],EAW86804.1,
+85,Gene.86::ENST00000623130.1::g.86::m.86,115,unknown [Homo sapiens],AAN76520.1,
+86,Gene.87::ENST00000623130.1::g.87::m.87,115,unnamed protein product [Homo sapiens],BAG62660.1,
+87,Gene.88::ENST00000623130.1::g.88::m.88,114,"hCG2038398, partial [Homo sapiens]",EAX10101.1,Tnp_22_dsRBD
+88,Gene.89::ENST00000623130.1::g.89::m.89,113,,,
+89,Gene.90::ENST00000623130.1::g.90::m.90,111,,,
+90,Gene.91::ENST00000623130.1::g.91::m.91,109,GRB2-associated-binding protein 4 isoform X5 [Homo sapiens],XP_011544418.1,
+91,Gene.92::ENST00000623130.1::g.92::m.92,109,,,
+92,Gene.93::ENST00000623130.1::g.93::m.93,108,,,
+93,Gene.94::ENST00000623130.1::g.94::m.94,108,,,
+94,Gene.95::ENST00000623130.1::g.95::m.95,108,"hCG1777785, partial [Homo sapiens]",EAX06041.1,DUF4407
+95,Gene.96::ENST00000623130.1::g.96::m.96,106,ovarian epithelial carcinoma-related protein [Homo sapiens],AAP30718.1,Transposase_22
+96,Gene.97::ENST00000623130.1::g.97::m.97,106,,,
+97,Gene.98::ENST00000623130.1::g.98::m.98,106,"hCG2042299, partial [Homo sapiens]",EAW72462.1,HSBP1
+98,Gene.99::ENST00000623130.1::g.99::m.99,105,"unnamed protein product, partial [Homo sapiens]",CAA26920.1,
+99,Gene.100::ENST00000623130.1::g.100::m.100,104,,,DUF6124
+100,Gene.101::ENST00000623130.1::g.101::m.101,104,,,
+101,Gene.102::ENST00000623130.1::g.102::m.102,104,"hypothetical protein FLJ11292, isoform CRA_a [Homo sapiens]",EAW95928.1,RWP-RK
+102,Gene.103::ENST00000623130.1::g.103::m.103,103,,,
+103,Gene.104::ENST00000623130.1::g.104::m.104,102,,,
+104,Gene.105::ENST00000623130.1::g.105::m.105,102,,,
+105,Gene.106::ENST00000623130.1::g.106::m.106,101,,,
+106,Gene.107::ENST00000623130.1::g.107::m.107,100,,,GPDPase_memb
+107,Gene.108::ENST00000424770.1::g.108::m.108,137,hCG2033532 [Homo sapiens],EAW68204.1,
+108,Gene.109::ENST00000424770.1::g.109::m.109,109,,,
+109,Gene.110::ENST00000400588.5::g.110::m.110,575,GRB2-associated-binding protein 4 isoform 1 [Homo sapiens],NP_001032903.1,PH
+110,Gene.111::ENST00000400588.5::g.111::m.111,251,,,
+111,Gene.112::ENST00000400588.5::g.112::m.112,168,,,
+112,Gene.113::ENST00000400588.5::g.113::m.113,127,,,
+113,Gene.114::ENST00000400588.5::g.114::m.114,103,GRB2-associated-binding protein 4 isoform X4 [Homo sapiens],XP_011544417.1,
+114,Gene.115::ENST00000400588.5::g.115::m.115,102,,,
+115,Gene.116::ENST00000262607.3::g.116::m.116,582,adenosine deaminase 2 isoform a precursor [Homo sapiens],NP_001269154.1,A_deaminase
+116,Gene.117::ENST00000262607.3::g.117::m.117,275,,,
+117,Gene.118::ENST00000262607.3::g.118::m.118,160,unnamed protein product [Homo sapiens],BAH12795.1,
+118,Gene.119::ENST00000262607.3::g.119::m.119,123,"hCG2038249, partial [Homo sapiens]",EAW99473.1,
+119,Gene.120::ENST00000262607.3::g.120::m.120,116,,,
+120,Gene.121::ENST00000262607.3::g.121::m.121,105,,,
+121,Gene.122::ENST00000413768.5::g.122::m.122,101,,,
+122,Gene.123::ENST00000399852.3::g.123::m.123,225,haloacid dehalogenase-like hydrolase domain-containing 5 isoform X5 [Homo sapiens],XP_016884272.1,
+123,Gene.124::ENST00000400585.6::g.124::m.124,1301,cat eye syndrome critical region protein 2 isoform 2 [Homo sapiens],NP_001276975.1,Bromodomain
+124,Gene.125::ENST00000400585.6::g.125::m.125,149,,,
+125,Gene.126::ENST00000400585.6::g.126::m.126,141,,,
+126,Gene.127::ENST00000400585.6::g.127::m.127,118,,,
+127,Gene.128::ENST00000400585.6::g.128::m.128,112,,,
+128,Gene.129::ENST00000400585.6::g.129::m.129,108,,,
+129,Gene.130::ENST00000400585.6::g.130::m.130,103,alternative protein CECR2 [Homo sapiens],CCQ43745.1,
+130,Gene.131::ENST00000399839.5::g.131::m.131,512,adenosine deaminase 2 isoform a precursor [Homo sapiens],NP_001269154.1,A_deaminase
+131,Gene.132::ENST00000399839.5::g.132::m.132,275,,,
+132,Gene.133::ENST00000399839.5::g.133::m.133,160,unnamed protein product [Homo sapiens],BAH12795.1,
+133,Gene.134::ENST00000399839.5::g.134::m.134,123,"hCG2038249, partial [Homo sapiens]",EAW99473.1,
+134,Gene.135::ENST00000399839.5::g.135::m.135,109,,,
+135,Gene.136::ENST00000399839.5::g.136::m.136,105,,,
+136,Gene.137::ENST00000252835.4::g.137::m.137,327,RecName: Full=Olfactory receptor 11H1; AltName: Full=Olfactory receptor OR22-1 [Homo sapiens],Q8NG94.3,7tm_4
+137,Gene.138::ENST00000441006.5::g.138::m.138,147,,,
+138,Gene.139::ENST00000592107.5::g.139::m.139,134,"hCG2038825, isoform CRA_a [Homo sapiens]",EAW57715.1,
+139,Gene.140::ENST00000457060.1::g.140::m.140,148,"hCG2040532, partial [Homo sapiens]",EAW57720.1,CCDC144C
+140,Gene.141::ENST00000399837.6::g.141::m.141,512,adenosine deaminase 2 isoform a precursor [Homo sapiens],NP_001269154.1,A_deaminase
+141,Gene.142::ENST00000399837.6::g.142::m.142,275,,,
+142,Gene.143::ENST00000399837.6::g.143::m.143,160,unnamed protein product [Homo sapiens],BAH12795.1,
+143,Gene.144::ENST00000399837.6::g.144::m.144,142,,,
+144,Gene.145::ENST00000399837.6::g.145::m.145,123,"hCG2038249, partial [Homo sapiens]",EAW99473.1,
+145,Gene.146::ENST00000399837.6::g.146::m.146,105,,,
+146,Gene.147::ENST00000447898.5::g.147::m.147,101,,,
+147,Gene.148::ENST00000399875.1::g.148::m.148,314,,,
+148,Gene.149::ENST00000399875.1::g.149::m.149,289,transmembrane protein 121B isoform X2 [Homo sapiens],XP_011544427.1,CECR6_TMEM121
+149,Gene.150::ENST00000399875.1::g.150::m.150,224,,,
+150,Gene.151::ENST00000399875.1::g.151::m.151,125,,,
+151,Gene.152::ENST00000431923.1::g.152::m.152,108,hCG1804364 [Homo sapiens],EAW57749.1,
+152,Gene.153::ENST00000155674.9::g.153::m.153,394,haloacid dehalogenase-like hydrolase domain-containing 5 isoform 1 [Homo sapiens],NP_060299.4,Hydrolase_6
+153,Gene.154::ENST00000155674.9::g.154::m.154,115,,,
+154,Gene.155::ENST00000155674.9::g.155::m.155,102,,,
+155,Gene.156::ENST00000449907.6::g.156::m.156,470,adenosine deaminase 2 isoform a precursor [Homo sapiens],NP_001269154.1,A_deaminase
+156,Gene.157::ENST00000449907.6::g.157::m.157,275,,,
+157,Gene.158::ENST00000449907.6::g.158::m.158,160,unnamed protein product [Homo sapiens],BAH12795.1,
+158,Gene.159::ENST00000449907.6::g.159::m.159,123,"hCG2038249, partial [Homo sapiens]",EAW99473.1,
+159,Gene.160::ENST00000449907.6::g.160::m.160,105,,,
+160,Gene.161::ENST00000336737.8::g.161::m.161,432,haloacid dehalogenase-like hydrolase domain-containing 5 isoform 2 precursor [Homo sapiens],NP_149061.1,Hydrolase_6
+161,Gene.162::ENST00000336737.8::g.162::m.162,139,,,
+162,Gene.163::ENST00000336737.8::g.163::m.163,102,,,
+163,Gene.164::ENST00000591299.1::g.164::m.164,156,"hCG2038825, isoform CRA_b [Homo sapiens]",EAW57716.1,
+164,Gene.165::ENST00000343518.10::g.165::m.165,546,POTE ankyrin domain family member H [Homo sapiens],NP_001129685.1,Ank_2
+165,Gene.166::ENST00000319363.10::g.166::m.166,911,interleukin-17 receptor A isoform 1 precursor [Homo sapiens],NP_055154.3,IL17R_fnIII_D1
+166,Gene.167::ENST00000319363.10::g.167::m.167,150,,,
+167,Gene.168::ENST00000319363.10::g.168::m.168,130,hCG1820681 [Homo sapiens],EAW57743.1,
+168,Gene.169::ENST00000319363.10::g.169::m.169,126,hCG2033532 [Homo sapiens],EAW68204.1,
+169,Gene.170::ENST00000319363.10::g.170::m.170,115,,,
+170,Gene.171::ENST00000319363.10::g.171::m.171,101,,,
+171,Gene.172::ENST00000623199.1::g.172::m.172,285,NAG13 [Homo sapiens],AAG27485.1,RVT_1
+172,Gene.173::ENST00000342247.9::g.173::m.173,692,RecName: Full=Cat eye syndrome critical region protein 2 [Homo sapiens],Q9BXF3.2,Bromodomain
+173,Gene.174::ENST00000342247.9::g.174::m.174,183,,,
+174,Gene.175::ENST00000342247.9::g.175::m.175,149,,,
+175,Gene.176::ENST00000342247.9::g.176::m.176,141,,,
+176,Gene.177::ENST00000342247.9::g.177::m.177,118,,,
+177,Gene.178::ENST00000342247.9::g.178::m.178,112,,,
+178,Gene.179::ENST00000342247.9::g.179::m.179,108,,,
+179,Gene.180::ENST00000342247.9::g.180::m.180,103,alternative protein CECR2 [Homo sapiens],CCQ43745.1,
